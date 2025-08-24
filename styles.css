@@ -1,0 +1,44 @@
+/* CleanFeedFB - Styles */
+
+/* Ensure hidden posts are completely removed from layout */
+[data-follow-hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important; /* Ensure no overflow during collapse */
+}
+
+/* Optional: Add smooth transition for posts being hidden */
+/* This class will be added initially to posts that are candidates for hiding */
+.cleanfeed-hide-transition {
+    opacity: 1;
+    max-height: 1000px; /* A large enough value to accommodate most posts */
+    transition: opacity 0.5s ease-out, max-height 0.5s ease-out; /* Smooth transition for both opacity and height */
+    overflow: hidden; /* Prevent content from spilling during height transition */
+}
+
+/* This class will be added to trigger the actual fade-out and collapse */
+.cleanfeed-hide-transition.hide {
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0 !important; /* Collapse margins during transition */
+    margin-bottom: 0 !important;
+    padding-top: 0 !important; /* Collapse padding during transition */
+    padding-bottom: 0 !important;
+}
+
+
+/* Debug mode indicator (only visible when debug is enabled) */
+.follow-hider-debug {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 10000;
+}

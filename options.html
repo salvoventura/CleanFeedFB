@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CleanFeedFB - Options</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span><img src="hiding-apps-icon-16.png"></span><span><h1>CleanFeedFB</h1></span>
+            <p>Hide Facebook posts with Follow and Join buttons</p>
+        </div>
+        
+        <div class="content">
+            <!-- About Section -->
+            <div class="section">
+                <h2>About</h2>
+                <div class="about-text">
+                    <p>The CleanFeedFB extension automatically detects and hides posts in your Facebook feed that contain "Follow" or "Join" buttons, helping you maintain a cleaner, more focused feed experience.</p>
+                    
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li><strong>Automatic Detection:</strong> Scans for posts containing Follow or Join buttons</li>
+                        <li><strong>Real-time Filtering:</strong> Works as new content loads in your feed</li>
+                        <li><strong>Toggle Control:</strong> Easily enable/disable the extension</li>
+                        <li><strong>Daily Statistics:</strong> Track how many posts are filtered each day</li>
+                        <li><strong>Lightweight:</strong> Minimal performance impact on your browsing</li>
+                    </ul>
+                    
+                    <p><strong>Privacy:</strong> This extension works entirely locally in your browser. No data is collected or sent to external servers.</p>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="section">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="todayCount">0</div>
+                        <div class="stat-label">Posts Hidden Today</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalCount">0</div>
+                        <div class="stat-label">Total Posts Hidden</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="avgPerDay">0</div>
+                        <div class="stat-label">Average Per Day</div>
+                    </div>
+                </div>
+                
+                <button class="button danger" id="resetStats">Reset All Statistics</button>
+                <div class="status-message" id="resetMessage"></div>
+            </div>
+            
+            <!-- Settings Section -->
+            <div class="section">
+                <h2>Settings</h2>
+                
+                <div class="setting-group">
+                    <label class="setting-label">Scan Interval</label>
+                    <div class="setting-description">How often to check for new posts (in seconds). Lower values detect posts faster but use more resources.</div>
+                    <input type="number" class="setting-input" id="scanInterval" min="1" max="30" value="3">
+                </div>
+                
+                <div class="setting-group">
+                    <label class="setting-label">Hide Delay</label>
+                    <div class="setting-description">Delay before hiding posts (in milliseconds). Helps ensure the DOM is stable before hiding.</div>
+                    <input type="number" class="setting-input" id="hideDelay" min="0" max="1000" step="50" value="100">
+                </div>
+                
+                <div class="setting-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" class="checkbox" id="debugMode">
+                        <div>
+                            <label class="setting-label" for="debugMode">Debug Mode</label>
+                            <div class="setting-description">Show debug information in browser console and add placeholders where posts were hidden.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="button success" id="saveSettings">Save Settings</button>
+                    <button class="button secondary" id="resetSettings">Reset to Defaults</button>
+                </div>                
+                <div class="status-message" id="settingsMessage"></div>
+            </div>
+        </div>
+        
+        <div class="version-info">
+            CleanFeedFB v1.1.0 | Made with ❤️ for a cleaner Facebook experience.
+        </div>
+    </div>
+    
+    <script src="browser-polyfill.min.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>

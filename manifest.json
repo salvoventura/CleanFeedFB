@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "CleanFeedFB",
+  "version": "1.0",
+  "description": "Hides Facebook posts that contain Follow or Join links from your timeline",
+  "homepage_url": "https://github.com/salvoventura/CleanFeedFB",
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cleanfeedfb@extension.local",
+      "strict_min_version": "109.0"
+    }
+  },
+  
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "js": ["browser-polyfill.min.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+
+  "icons": {
+    "16": "hiding-apps-icon-16.png",
+    "48": "hiding-apps-icon-48.png",
+    "128": "hiding-apps-icon-128.png"
+  },
+  
+  "action": {
+    "default_title": "CleanFeedFB",
+    "default_popup": "popup.html"
+  }
+}

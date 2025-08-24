@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* Popup-specific overrides */
+        body {
+            width: 280px;
+            padding: 16px;
+            font-size: 14px;
+        }
+        
+        .header h1 {
+            font-size: 16px;
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+        
+        .header p {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+        
+        .header {
+            background: none;
+            color: var(--text-primary);
+            padding: 0;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span><img src="hiding-apps-icon-16.png"></span><span><h1>CleanFeedFB</h1></span>
+        <p>Hide Facebook posts with Follow and Join buttons</p>
+    </div>
+    
+    <div class="toggle-container">
+        <span class="toggle-label">Hide Follow/Join Posts</span>
+        <div class="toggle-switch" id="toggleSwitch">
+            <div class="toggle-slider"></div>
+        </div>
+    </div>
+    
+    <div class="status" id="status">
+        Loading...
+    </div>
+    
+    <div class="stats">
+        <div class="stats-label">Posts Hidden Today</div>
+        <div class="stats-count" id="hiddenCount">0</div>
+    </div>
+    
+    <div class="footer">
+        Click the toggle above to enable/disable hiding
+        <br>
+        <a href="#" id="optionsLink" class="options-link">⚙️ Settings & Statistics</a>
+        <div class="debug-info" id="debugInfo" style="display: none;"></div>
+    </div>
+    
+    <script src="browser-polyfill.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
