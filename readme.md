@@ -26,13 +26,13 @@
 Once installed, the extension will immediately begin hiding suggested content in your main feed.
 A new icon button will appear in the browser toolbar. If not visible, then click on the `Extensions` icon to find it in the list. You can pin it if desired. The tooltip displays CleanFeedFB. 
 
-![Screenshot](screenshot-placeholder.png)
+![Screenshot](hiding-apps-icon-128.png)
 
 
 #### The Popup page
 Click on the button, and a popup will open. Here you will be able to enable and disable the extension. The panel also displays the state of the extension (active/disabled), and a count of posts hidden today. At the bottom, you will find a link to the Options page.
 
-![Popup page](screenshot-placeholder.png)
+![Popup page](cleanfeedfb_popup.png)
 
 #### The Options page
 This page contains an `About` and `Statistics` section. Further below, there is a `Settings` section which allows you to control the following parameters:
@@ -43,7 +43,7 @@ This page contains an `About` and `Statistics` section. Further below, there is 
 * **Debug Mode** : Show debug information in browser console and add placeholders where posts were hidden. Allows to enable/disable debug mode for troubleshooting. Default unchecked.
 
 
-![Options page](screenshot-placeholder.png)
+![Options page](cleanfeedfb_settings.png)
 
 --- 
 
@@ -67,7 +67,7 @@ MIT License. See [LICENSE](http://www.opensource.org/licenses/MIT) for details.
 
 
 ## Other credits
-Coded with help from [claude.ai](https://claude.ai/). Icons from [uxwing.com](https://uxwing.com/hiding-apps-icon/).
+Coded with help from [claude.ai](https://claude.ai/) and [Gemini](https://gemini.google.com/). Icons from [uxwing.com](https://uxwing.com/hiding-apps-icon/).
 
 
 ## Links
