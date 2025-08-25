@@ -16,7 +16,7 @@
 [example.com](example.com)
 
 ### Google Chrome
-[example.com](example.com)
+[Google Chrome Webstore](https://chromewebstore.google.com/detail/cleanfeedfb/eannhnggjphooldllonhjkacflpfplol)
 
 ### Microsoft Edge
 [example.com](example.com)
