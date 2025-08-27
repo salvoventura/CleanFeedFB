@@ -19,7 +19,9 @@
 [Google Chrome Webstore](https://chromewebstore.google.com/detail/cleanfeedfb/eannhnggjphooldllonhjkacflpfplol)
 
 ### Microsoft Edge
-[example.com](example.com)
+You would use the Google Chrome store.
+
+[https://support.microsoft.com/en-us/help/4538971/microsoft-edge-add-or-remove-extensions](https://support.microsoft.com/en-us/help/4538971/microsoft-edge-add-or-remove-extensions)
 
 
 ## Usage
