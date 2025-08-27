@@ -13,7 +13,7 @@
 ## Installation
 
 ### Mozilla Firefox
-[example.com](example.com)
+[Firefox Browser Add-ons](https://addons.mozilla.org/en-US/firefox/addon/cleanfeedfb/)
 
 ### Google Chrome
 [Google Chrome Webstore](https://chromewebstore.google.com/detail/cleanfeedfb/eannhnggjphooldllonhjkacflpfplol)
