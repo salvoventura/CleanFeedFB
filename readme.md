@@ -74,6 +74,9 @@ Coded with help from [claude.ai](https://claude.ai/) and [Gemini](https://gemini
 
 ## Links
 - [GitHub Repository](https://github.com/salvoventura/CleanFeedFB/)
-- [CleanFeedFB on the Firefox Browser Add-ons ](#)
-- [CleanFeedFB on the Chrome Web Store](#)
+- [CleanFeedFB on the Firefox Browser Add-ons ](https://addons.mozilla.org/en-US/firefox/addon/cleanfeedfb/)
+- [CleanFeedFB on the Chrome Web Store](https://chromewebstore.google.com/detail/cleanfeedfb/eannhnggjphooldllonhjkacflpfplol)
+
+
+
 
